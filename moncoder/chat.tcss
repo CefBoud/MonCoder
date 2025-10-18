@@ -1,0 +1,148 @@
+Screen {
+    layout: grid;
+    grid-size: 4 4;
+    grid-gutter: 1 2;
+}
+
+#chat_container {
+    column-span: 4;
+    row-span: 3;
+    border: solid $primary;
+    background: $surface;
+}
+
+#user_list {
+    column-span: 1;
+    row-span: 3;    
+    border: solid $secondary;
+    background: $surface;
+    padding: 1;
+}
+
+#input_container {
+    column-span: 4;
+    row-span: 1;
+    border: solid $accent;
+    background: $surface;
+}
+
+#chat_room {
+    height: 100%;
+    padding: 1;
+}
+
+.message-line {
+    height: auto;
+    width: 100%;
+}
+
+.message-header {
+    width: auto;
+    height: auto;
+    margin-right: 1;
+}
+
+.message-content-inline {
+    width: 1fr; 
+    height: auto; 
+    margin: 0;
+    padding: 0;
+}
+
+#message_input {
+        dock: none;
+        height: 1fr;
+}
+
+#spinner-row {
+    align: left middle;
+    height: 1;
+    margin: 0;          /* remove vertical margin */
+    padding: 0;         /* remove padding too */
+    color: $text;
+}
+
+#chat-spinner {
+    width: 3;
+    height: 1;
+    margin: 0 1 0 0;    /* only a small right margin before text */
+    color: $accent;
+}
+
+#spinner-text {
+    color: $text-muted;
+    text-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+.message_widget {
+    padding: 0 1;
+    margin: 0 0 1 0;
+}
+
+.tool-call-content {
+     background: $background;
+     border: round $success;
+     padding: 1;
+     margin: 0 0;
+ }
+
+ .diff-viewer {
+      background: $surface;
+      border: round $warning;
+      padding: 1;
+      margin: 0 0;
+  }
+
+.diff-line {
+     padding: 0;
+     margin: 0;
+ }
+
+.addition {
+     color: $success;
+ }
+
+.deletion {
+     color: $error;
+ }
+
+.context {
+     color: $primary;
+ }
+
+.header {
+     color: $text-muted;
+ }
+
+.diff-viewer-scroll {
+     height: 15;
+ }
+
+/* Styles for user and assistant messages */
+.text-content {
+    background: $surface;
+    padding: 0 1;
+    margin: 0 0 1 0;
+}
+.user {
+    border-left: solid $accent;
+}
+.assistant {
+    border-left: solid $success;
+}
+
+#moncoder_label {
+    content-align: center middle;
+    color: $surface;
+    background: $primary;
+    border: round;
+    margin: 1;
+    padding: 1;
+    text-style: bold;
+    height: auto;
+    width: 80%;
+
+    border: thick $accent;
+}
